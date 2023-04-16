@@ -5,12 +5,12 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-.navba-nav .nav-item {
+.nav-item {
+    white-space: normal;
 }
 
 .Search1 {
     width: 40rem;
-    margin-inline: 15px;
     }
 
 .navbar-light .navbar-nav .nav-link {
@@ -292,14 +292,17 @@ body {
     }
     .B-logo {
         display: flex;
-        margin-left: 5px;
-        position:relative;
     }
     .Menu-btn {
         border: none;
     }
     .nav-item {
         display: none;
+    }
+    .account-btn {
+        border-radius: 50%;
+        height: 2.5rem;
+        width: 2.5rem;
     }
 }
 @media screen and (max-width: 985px) {
@@ -355,9 +358,6 @@ body {
 @media screen and (max-width: 935px) {
     .Search1 {
     width: 44.8rem;
-    }
-    .Search1 {
-        margin-inline: 5px;
     }
 }
 @media screen and (max-width: 930px) {
@@ -757,11 +757,6 @@ body {
 @media screen and (max-width: 535px) {
     .Search1 {
     width: 20.4rem;
-    }
-    .account-btn {
-        border-radius: 50%;
-        height: 2.5rem;
-        width: 2.5rem;
     }
 }
 @media screen and (max-width: 530px) {

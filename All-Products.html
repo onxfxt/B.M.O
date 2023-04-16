@@ -6,79 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BiddersTrove</title>
     <link rel="shortcut icon" href="img/icon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+    <nav class="navbar bg-white bg-opacity-75 navbar-expand-lg navbar-light border-bottom sticky-top">
       <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="img/bidders-removebg-preview.png" alt="Logo" width="140" height="70" class="d-inline-block align-text-top">
-            </a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Cartegories</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Help</a>
-                </li>
-              </ul>
-            <form class="d-flex" role="search">
-              <div class="">
-                <a class="" href="#" type="submit"><i><img src="icons/log-in.svg" alt=""></i>Login</a>
-                <a class="" type="submit" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i><img src="icons/user-plus.svg" alt=""></i>Register</a>
-              </div>
-                
-            </form>
+        <button class="navbar-toggler d-sm-block d-lg-none Menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            
-          </div>
         
+          <div class="d-lg-block d-none">
+            <a class="navbar-brand" href="#">
+              <img src="img/bidders-removebg-preview.png" alt="Logo" width="140" height="70" class="align-text-center">
+            </a>
+          </div>
+          
+          <div class="B-logo">
+            <a class="navbar-brand" href="#">
+              <img src="img/icon.png" alt="Logo" class="align-text-center">
+            </a>
+          </div>
+          
+          <div class="d-flex justify-content-center align-items-center" >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active px-2" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cartegories</a>
+              </li>
+              <input class="form-control rounded-pill border-primary Search1" type="search" placeholder="Search" aria-label="Search">
+              <li class="nav-item">
+                <a class="nav-link pe-2" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2" href="#">Help</a>
+              </li>
+            </ul>
+
+          </div>
+          <button type="button" class="btn btn-outline-primary rounded-pill account-btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img src="icons/user-plus.svg" class="sign-in-out-icon" alt=""><span class="sign-in-out-text">Sign-in/up</span></button>     
       </div>
     </nav>
 
-    <section>
-        <div class="row">
-            <div class="col-3">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item" type="button" href="#" >All</li>
-                    <li class="list-group-item" type="button">Home & Furniture</li>
-                    <li class="list-group-item" type="button">Appliances</li>
-                    <li class="list-group-item" type="button">Electronics</li>
-                    <li class="list-group-item" type="button">Clothing, Shoes & Accesories</li>
-                    <li class="list-group-item" type="button">Automotive & Accesories</li>
-                    <li class="list-group-item" type="button">Patio & Garden</li>
-                    <li class="list-group-item" type="button">Beauty</li>
-                    <li class="list-group-item" type="button">Pets & Accesories</li>
-                    <li class="list-group-item" type="button">Toys & Video Games</li>
-                    <li class="list-group-item" type="button">Household essentials</li>
-                    <li class="list-group-item" type="button">Pharmacy & Health</li>
-                    <li class="list-group-item" type="button">Sports Items</li>
-                    <li class="list-group-item" type="button">Office & School</li>
-                    <li class="list-group-item" type="button">Books</li>
-                    <li class="list-group-item" type="button">Art & Crafts</li>
-                </ul>
-            </div>
-            <div class="col-9"></div>
-        </div>
-    </section>
-
-    <section class="mt-5 bg-primary text-white">
+    <section class="bg-primary text-white">
       <div class="container-fluid border-top">
         <footer class="py-5">
           <div class="row g-3 px-4">
@@ -126,10 +103,81 @@
       </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-    <script src="js/javascript.js"></script>
+    <!-- Modal and forms -->
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel"></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+              <div class="container h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                  <div class="card" style="border-radius: 15px;">
+                    <div class="card-body">
+                      <img class="d-flex justify-content-center" src="img/bidders1.JPG" alt="">
+                      <h2 class="text-uppercase text-center mb-5">Register</h2>
+                      <form>
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form3Example1cg" class="form-control form-control-lg" placeholder="Name"/>
+                        </div>
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form3Example3cg" class="form-control form-control-lg" placeholder="Email"/>
+                        </div>
+                        <div class="form-outline mb-4">
+                          <input type="password" id="form3Example4cg" class="form-control form-control-lg" placeholder="Password"/>
+                        </div>
+                        <div class="form-outline mb-4">
+                          <input type="password" id="form3Example4cdg" class="form-control form-control-lg" placeholder="Comfirm"/>
+                        </div>
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form3Example3cg" class="form-control form-control-lg" placeholder=""/>
+                        </div>
+                        <div class="form-check d-flex justify-content-center mb-5">
+                          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                          <label class="form-check-label" for="form2Example3g">
+                            I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                          </label>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button type="button" data-bs-toggle="modal"
+                            class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offcanvas dropdown menu -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
 
     <script src="js/bootstrap.bundle.min.js"></script>
 
+    <script src="js/javascript.js"></script>
+
   </body>
+
+</html>
