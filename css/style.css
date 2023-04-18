@@ -5,6 +5,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h1 {
+    font-size: 1.5rem;
+}
+
 .nav-item {
     white-space: normal;
 }
@@ -645,6 +649,9 @@ h1 {
     .For-3 {
         display: contents;
     }
+    h1 {
+        font-size: 1rem;
+    }
 }
 @media screen and (max-width: 715px) {
     .Search1 {
@@ -870,6 +877,9 @@ h1 {
     }
     .For-2 {
         display: contents;
+    }
+    h1 {
+        font-size: 0.7rem;
     }
 }
 @media screen and (max-width: 505px) {
